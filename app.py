@@ -14,7 +14,7 @@ def analysis():
     # Try to get the URI from the JSON
     try:
         get_json = request.get_json()
-        image_uri = get_json['https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/b1bcbca4-e853-4df7-b329-5be3c61ee057/NIKE+DUNK+LOW+RETRO.png']
+        image_uri = get_json['uri']
     except:
         return jsonify({'error': 'Missing URI in JSON'}), 400
     

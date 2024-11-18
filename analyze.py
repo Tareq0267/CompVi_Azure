@@ -5,10 +5,10 @@ import time
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+load_dotenv
 
-endpoint = os.getenv("ENDPOINT")
-key = os.getenv("API_KEY")
+endpoint = os.getenv('ENDPOINT')
+key = os.getenv('API_KEY')
 
 credentials = CognitiveServicesCredentials(key)
 
